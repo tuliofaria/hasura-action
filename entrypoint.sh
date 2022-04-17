@@ -20,6 +20,7 @@ fi
 # create mock config file if none found
 if [ ! -f config.yaml ]; then
     touch config.yaml
+    echo "config file created"
 fi
 
 if [ -n "$HASURA_ENGINE_VERSION" ]; then
